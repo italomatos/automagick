@@ -33,4 +33,4 @@ en:
   admin:
     cron_requests:
       index:
-        new_button: "New schedule request"
+        new_button: "Novo agendamento de requisição"
