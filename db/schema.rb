@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_22_020825) do
+ActiveRecord::Schema.define(version: 2018_08_22_093944) do
+
+  create_table "admin_cron_request_logs", force: :cascade do |t|
+    t.integer "cron_request_id"
+    t.integer "status_code"
+    t.text "response"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "admin_cron_requests", force: :cascade do |t|
     t.string "title"

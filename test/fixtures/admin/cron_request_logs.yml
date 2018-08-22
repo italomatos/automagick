@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cron_request_id: 1
+  status_code: 1
+  response: MyText
+
+two:
+  cron_request_id: 1
+  status_code: 1
+  response: MyText
