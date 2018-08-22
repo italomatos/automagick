@@ -73,6 +73,6 @@ class Admin::CronRequestsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def admin_cron_request_params
-      params.require(:admin_cron_request).permit(:title, :description, :url, :http_method, :periodicity, :at, :status, :user_id, :params)
+      params.require(:admin_cron_request).permit(:title, :description, :url, :http_method, :periodicity, :at, :status, :user_id, :periodicity_type, :params)
     end
 end

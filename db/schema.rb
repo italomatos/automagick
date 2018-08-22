@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_22_093944) do
+ActiveRecord::Schema.define(version: 2018_08_22_164345) do
 
   create_table "admin_cron_request_logs", force: :cascade do |t|
     t.integer "cron_request_id"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2018_08_22_093944) do
     t.string "params"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "periodicity_type"
   end
 
   create_table "users", force: :cascade do |t|
