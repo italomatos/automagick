@@ -29,8 +29,22 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+pt-BR:
+  button:
+    edit: "Editar"
+    show: "Exibir"
+    destroy: "Remover"
+  message:
+    confirmation_message: "Tem certeza que deseja executar essa ação?"
   admin:
     cron_requests:
       index:
+        title_page: "Lista de agendamento de requisições"
+        table_header_title: "Título"
+        table_header_url: "URL"
+        table_header_periodicity: "Período"
+        table_header_status: "Status"
+        table_header_params: "Parâmetros"
+        table_header_actions: "Ações"
+
         new_button: "Novo agendamento de requisição"

@@ -30,7 +30,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  button:
+    edit: "Edit"
+    show: "Show"
+    destroy: "Destroy"
+  message:
+    confirmation_message: "Are you sure?"
   admin:
     cron_requests:
       index:
+        title_page: "Admin Cron Requests"
+        table_header_title: "Title"
+        table_header_url: "URL"
+        table_header_periodicity: "Periodicity"
+        table_header_status: "Status"
+        table_header_params: "Parameters"
+        table_header_actions: "Action"
+
         new_button: "New schedule request"

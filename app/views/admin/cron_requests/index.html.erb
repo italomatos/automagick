@@ -1,38 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Admin Cron Requests</h1>
+<h1><%= t('.title_page')%></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Url</th>
-      <th>Http method</th>
-      <th>Periodicity</th>
-      <th>At</th>
-      <th>Status</th>
-      <th>User</th>
-      <th>Params</th>
-      <th colspan="3"></th>
+      <th><%= t('.table_header_title')%></th>
+      <th><%= t('.table_header_url')%></th>
+      <th><%= t('.table_header_periodicity')%></th>
+      <th><%= t('.table_header_status')%></th>
+      <th><%= t('.table_header_params')%></th>
+      <th colspan="3"><%= t('.table_header_actions')%></th>
     </tr>
   </thead>
 
   <tbody>
     <% @admin_cron_requests.each do |admin_cron_request| %>
       <tr>
-        <td><%= admin_cron_request.title %></td>
-        <td><%= admin_cron_request.description %></td>
-        <td><%= admin_cron_request.url %></td>
-        <td><%= admin_cron_request.http_method %></td>
-        <td><%= admin_cron_request.periodicity %></td>
-        <td><%= admin_cron_request.at %></td>
+        <td><%= admin_cron_request.title %> <br/><%= admin_cron_request.description %></td>
+        <td><%= admin_cron_request.url %> - <%= admin_cron_request.http_method %></td>
+        <td><%= admin_cron_request.periodicity %> at <%= admin_cron_request.at %></td>
         <td><%= admin_cron_request.status %></td>
-        <td><%= admin_cron_request.user_id %></td>
         <td><%= admin_cron_request.params %></td>
-        <td><%= link_to 'Show', admin_cron_request %></td>
-        <td><%= link_to 'Edit', edit_admin_cron_request_path(admin_cron_request) %></td>
-        <td><%= link_to 'Destroy', admin_cron_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('button.show'), admin_cron_request %></td>
+        <td><%= link_to t('button.edit'), edit_admin_cron_request_path(admin_cron_request) %></td>
+        <td><%= link_to t('button.destroy'), admin_cron_request, method: :delete, data: { confirm: t('button.destroy') } %></td>
         <td><%= link_to 'Logs', admin_cron_request_logs_url(admin_cron_request)%></td>
       </tr>
     <% end %>
