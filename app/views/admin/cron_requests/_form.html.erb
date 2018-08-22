@@ -1,0 +1,62 @@
+<%= form_with(model: admin_cron_request, local: true) do |form| %>
+  <% if admin_cron_request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(admin_cron_request.errors.count, "error") %> prohibited this admin_cron_request from being saved:</h2>
+
+      <ul>
+      <% admin_cron_request.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :http_method %>
+    <%= form.text_field :http_method %>
+  </div>
+
+  <div class="field">
+    <%= form.label :periodicity %>
+    <%= form.text_field :periodicity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :at %>
+    <%= form.text_field :at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.check_box :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :params %>
+    <%= form.text_field :params %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  url: MyString
+  http_method: MyString
+  periodicity: MyString
+  at: MyString
+  status: false
+  user_id: 1
+  params: MyString
+
+two:
+  title: MyString
+  description: MyText
+  url: MyString
+  http_method: MyString
+  periodicity: MyString
+  at: MyString
+  status: false
+  user_id: 1
+  params: MyString

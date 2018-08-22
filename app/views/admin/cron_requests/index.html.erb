@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Admin Cron Requests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Url</th>
+      <th>Http method</th>
+      <th>Periodicity</th>
+      <th>At</th>
+      <th>Status</th>
+      <th>User</th>
+      <th>Params</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_cron_requests.each do |admin_cron_request| %>
+      <tr>
+        <td><%= admin_cron_request.title %></td>
+        <td><%= admin_cron_request.description %></td>
+        <td><%= admin_cron_request.url %></td>
+        <td><%= admin_cron_request.http_method %></td>
+        <td><%= admin_cron_request.periodicity %></td>
+        <td><%= admin_cron_request.at %></td>
+        <td><%= admin_cron_request.status %></td>
+        <td><%= admin_cron_request.user_id %></td>
+        <td><%= admin_cron_request.params %></td>
+        <td><%= link_to 'Show', admin_cron_request %></td>
+        <td><%= link_to 'Edit', edit_admin_cron_request_path(admin_cron_request) %></td>
+        <td><%= link_to 'Destroy', admin_cron_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Admin Cron Request', new_admin_cron_request_path %>

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @admin_cron_request.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @admin_cron_request.description %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @admin_cron_request.url %>
+</p>
+
+<p>
+  <strong>Http method:</strong>
+  <%= @admin_cron_request.http_method %>
+</p>
+
+<p>
+  <strong>Periodicity:</strong>
+  <%= @admin_cron_request.periodicity %>
+</p>
+
+<p>
+  <strong>At:</strong>
+  <%= @admin_cron_request.at %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @admin_cron_request.status %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @admin_cron_request.user_id %>
+</p>
+
+<p>
+  <strong>Params:</strong>
+  <%= @admin_cron_request.params %>
+</p>
+
+<%= link_to 'Edit', edit_admin_cron_request_path(@admin_cron_request) %> |
+<%= link_to 'Back', admin_cron_requests_path %>
