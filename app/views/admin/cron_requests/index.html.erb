@@ -33,6 +33,7 @@
         <td><%= link_to 'Show', admin_cron_request %></td>
         <td><%= link_to 'Edit', edit_admin_cron_request_path(admin_cron_request) %></td>
         <td><%= link_to 'Destroy', admin_cron_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Logs', admin_cron_request_logs_url(admin_cron_request)%></td>
       </tr>
     <% end %>
   </tbody>

@@ -1,0 +1,28 @@
+<br/>
+
+<section class="panel">
+  <header class="panel-heading">
+    Log
+  </header>
+
+
+<table class="table b-t text-small">
+   <thead>
+  <tr>
+    <th>Data</th>
+    <th>Http Status Code</th>
+    <th>Response</th>
+  </tr>
+  </thead>
+
+<% @admin_cron_request_logs.each do |admin_cron_request_log| %>
+  <tr>
+    <td><%= admin_cron_request_log.created_at %></td>
+    <td><%= admin_cron_request_log.status_code %></td>
+    <td><pre><%= admin_cron_request_log.response %></pre></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+</section>

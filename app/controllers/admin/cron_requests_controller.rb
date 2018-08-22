@@ -61,6 +61,10 @@ class Admin::CronRequestsController < ApplicationController
     end
   end
 
+  def logs
+    @admin_cron_request_logs = Admin::CronRequest.find(params[:cron_request_id]).cron_request_logs.order("id DESC")
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_admin_cron_request
