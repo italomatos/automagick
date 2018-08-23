@@ -34,6 +34,7 @@ Automagick is designed to run in the cloud or on dedicated hardware, whatever yo
 	$> git clone https://github.com/italomatos/automagick automagick
 	$> cd automagick
 	$> cp config/database.yml.sample config/database.yml
+	$> cp config/schedule.rb.sample config/schedule.rb
 	$> bundle install --without production
 	$> bundle exec rake db:setup
 	$> rails s -p 3000

@@ -6,6 +6,10 @@ class Admin::CronRequest < ApplicationRecord
 	has_many :cron_request_logs
 	after_save :update_whenever_file
 
+	validates :title, presence: true
+	validates :url, presence: true
+	validates :http_method, presence: true
+
 	def run!
 		logger = Logger.new(STDOUT) 
 		uri = URI(self.url)
