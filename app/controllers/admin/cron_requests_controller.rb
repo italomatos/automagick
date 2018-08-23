@@ -65,6 +65,14 @@ class Admin::CronRequestsController < ApplicationController
     @admin_cron_request_logs = Admin::CronRequest.find(params[:cron_request_id]).cron_request_logs.order("id DESC")
   end
 
+  def run_now
+    @admin_cron_request = Admin::CronRequest.find(params[:cron_request_id])
+    @admin_cron_request.run!
+    respond_to do |format|
+      format.html { redirect_to admin_cron_requests_url, notice: 'Success!' }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_admin_cron_request

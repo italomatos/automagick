@@ -47,4 +47,7 @@ en:
         table_header_params: "Parameters"
         table_header_actions: "Action"
 
+        table_label_log_action: "Logs"
+        table_label_run_manually_action: "Run Manually"
+
         new_button: "New schedule request"

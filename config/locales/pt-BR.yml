@@ -46,6 +46,8 @@ pt-BR:
         table_header_status: "Status"
         table_header_params: "Parâmetros"
         table_header_actions: "Ações"
+        table_label_log_action: "Logs"
+        table_label_run_manually_action: "Executar manualmente (agora)"
 
         new_button: "Novo agendamento de requisição"
   activerecord:
