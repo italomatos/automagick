@@ -1,3 +1,5 @@
+
+
 <%= form_with(model: admin_cron_request, local: true) do |form| %>
   <% if admin_cron_request.errors.any? %>
     <div id="error_explanation">
@@ -11,49 +13,57 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  <div class="form-group">
+    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
+    </label>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+  <div class="form-group">
+    <%= form.label :title, :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
+    <div class="col-md-6 col-sm-6 col-xs-12"><%= form.text_field :title, :class=>"form-control col-md-7 col-xs-12" %></div>
   </div>
 
-  <div class="field">
-    <%= form.label :url %>
-    <%= form.text_field :url %>
+  <div class="form-group">
+    <%= form.label :description, :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
+    <div class="col-md-6 col-sm-6 col-xs-12"><%= form.text_area :description, :class=>"form-control col-md-7 col-xs-12" %></div>
   </div>
 
-  <div class="field">
-    <%= form.label :http_method %>
-    <%= form.text_field :http_method %>
+  <div class="form-group">
+    <%= form.label :url, :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
+    <div class="col-md-6 col-sm-6 col-xs-12"><%= form.text_field :url, :class=>"form-control col-md-7 col-xs-12" %></div>
   </div>
 
-  <div class="field">
-    <%= form.label :periodicity %>
-    <%= form.text_field :periodicity %>
+  <div class="form-group">
+    <%= form.label :http_method, :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
+    <div class="col-md-6 col-sm-6 col-xs-12"><%= form.text_field :http_method, :class=>"form-control col-md-7 col-xs-12" %></div>
   </div>
 
-  <div class="field">
-    <%= form.label :at %>
-    <%= form.text_field :at %>
+  <div class="form-group">
+    <%= form.label :periodicity, :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
+    <div class="col-md-6 col-sm-6 col-xs-12"><%= form.text_field :periodicity, :class=>"form-control col-md-7 col-xs-12" %></div>
   </div>
 
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.check_box :status %>
+  <div class="form-group">
+    <%= form.label :at, :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
+    <div class="col-md-6 col-sm-6 col-xs-12"><%= form.text_field :at, :class=>"form-control col-md-7 col-xs-12" %></div>
   </div>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.number_field :user_id %>
+  <div class="form-group">
+    <%= form.label :status, :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
+    <div class="col-md-6 col-sm-6 col-xs-12"><%= form.check_box :status, :class=>"form-control col-md-7 col-xs-12" %></div>
   </div>
 
-  <div class="field">
-    <%= form.label :params %>
-    <%= form.text_field :params %>
+  <div class="form-group">
+    <%= form.label :user_id, :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
+   <div class="col-md-6 col-sm-6 col-xs-12"> <%= form.number_field :user_id, :class=>"form-control col-md-7 col-xs-12" %></div>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :params, :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
+    <div class="col-md-6 col-sm-6 col-xs-12"><%= form.text_field :params, :class=>"form-control col-md-7 col-xs-12" %></div>
   </div>
 
   <div class="actions">
