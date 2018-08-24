@@ -1,8 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= t('.title_page')%></h1>
+<div class="x_panel">
 
-<table>
+<div class="x_title">
+<h1><%= t('.title_page')%></h1>
+</div>
+
+<div class="x_content">
+<table class="table table-striped">
   <thead>
     <tr>
       <th><%= t('.table_header_title')%></th>
@@ -34,4 +39,6 @@
 
 <br>
 
-<%= link_to t('.new_button'), new_admin_cron_request_path %>
+<%= link_to t('.new_button'), new_admin_cron_request_path, :class=>"btn btn-success" %>
+</div>
+</div>
