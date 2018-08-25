@@ -51,3 +51,12 @@ en:
         table_label_run_manually_action: "Run Manually"
 
         new_button: "New schedule request"
+      form:
+        label_title: "Title"
+        label_description: "Description" 
+        label_url: "URL"
+        label_http_method: "Http Method"
+        label_periodicity: "Periodicity"
+        label_at: "Hour"
+        label_status: "Status"
+        label_params: "Parameters"

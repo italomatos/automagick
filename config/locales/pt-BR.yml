@@ -50,6 +50,15 @@ pt-BR:
         table_label_run_manually_action: "Executar manualmente (agora)"
 
         new_button: "Novo agendamento de requisição"
+      form:
+        label_title: "Título"
+        label_description: "Descrição" 
+        label_url: "Link"
+        label_http_method: "Método HTTP"
+        label_periodicity: "Período"
+        label_at: "Horário"
+        label_status: "Status"
+        label_params: "Parâmetros"
   activerecord:
     errors:
       messages:
