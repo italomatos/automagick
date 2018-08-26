@@ -35,8 +35,10 @@ pt-BR:
     show: "Exibir"
     destroy: "Remover"
     back: "Voltar"
+    send: "Enviar"
   message:
     confirmation_message: "Tem certeza que deseja executar essa ação?"
+    prohibited_saved: "proibiu(ram) com que seja salva a(s) alteração(ões)"
   admin:
     cron_requests:
       index:
@@ -53,6 +55,8 @@ pt-BR:
         new_button: "Novo agendamento de requisição"
       new:
         title_page: "Novo agendamento de requisição"
+      edit:
+        title_page: "Atualizar o agendamento de requisição"
       form:
         label_title: "Título"
         label_description: "Descrição" 

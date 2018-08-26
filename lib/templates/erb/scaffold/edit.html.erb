@@ -7,8 +7,9 @@
 		  </div>
 
 		  <div class="x_content">
-			<%= render 'form', admin_cron_request: @admin_cron_request %>
-			<%= link_to t("button.back"), admin_cron_requests_path %>
+			<%%= render 'form', <%= singular_table_name %>: @<%= singular_table_name %> %>
+			<%%= link_to t("button.show"), @<%= singular_table_name %> %> |
+			<%%= link_to t("button.back"), <%= index_helper %>_path %>
 		  </div>
 		</div>
 	</div>

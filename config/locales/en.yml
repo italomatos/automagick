@@ -35,8 +35,10 @@ en:
     show: "Show"
     destroy: "Destroy"
     back: "Back"
+    send: "Send"
   message:
     confirmation_message: "Are you sure?"
+    prohibited_saved: "prohibited this admin_cron_request from being saved:"
   admin:
     cron_requests:
       index:
@@ -54,6 +56,8 @@ en:
         new_button: "New schedule request"
       new:
         title_page: "New schedule request"
+      edit:
+        title_page: "Edit schedule request"
       form:
         label_title: "Title"
         label_description: "Description" 
