@@ -58,6 +58,16 @@ en:
         title_page: "New schedule request"
       edit:
         title_page: "Edit schedule request"
+      show:
+        title_page: "Show schedule request"
+        label_title: "Title:"
+        label_description: "Description:" 
+        label_url: "URL:"
+        label_http_method: "Http Method:"
+        label_periodicity: "Periodicity:"
+        label_at: "Hour:"
+        label_status: "Status:"
+        label_params: "Parameters:"
       form:
         label_title: "Title"
         label_description: "Description" 

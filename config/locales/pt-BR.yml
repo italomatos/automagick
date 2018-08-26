@@ -57,6 +57,16 @@ pt-BR:
         title_page: "Novo agendamento de requisição"
       edit:
         title_page: "Atualizar o agendamento de requisição"
+      edit:
+        title_page: "Exibir informações sobre o agendamento de requisição"
+        label_title: "Título"
+        label_description: "Descrição" 
+        label_url: "Link"
+        label_http_method: "Método HTTP"
+        label_periodicity: "Período"
+        label_at: "Horário"
+        label_status: "Status"
+        label_params: "Parâmetros"
       form:
         label_title: "Título"
         label_description: "Descrição" 

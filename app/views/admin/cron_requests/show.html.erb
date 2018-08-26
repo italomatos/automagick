@@ -1,37 +1,47 @@
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+      <div class="x_title">
+          <h2><%= t(".title_page") %></h2>
+          <div class="clearfix"></div>
+      </div>
+
+      <div class="x_content">
+        
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong><%=t(".label_title")%></strong>
   <%= @admin_cron_request.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong><%=t(".label_description")%></strong>
   <%= @admin_cron_request.description %>
 </p>
 
 <p>
-  <strong>Url:</strong>
+  <strong><%=t(".label_url")%></strong>
   <%= @admin_cron_request.url %>
 </p>
 
 <p>
-  <strong>Http method:</strong>
+  <strong><%=t(".label_http_method")%></strong>
   <%= @admin_cron_request.http_method %>
 </p>
 
 <p>
-  <strong>Periodicity:</strong>
+  <strong><%=t(".label_periodicity")%></strong>
   <%= @admin_cron_request.periodicity %>
 </p>
 
 <p>
-  <strong>At:</strong>
+  <strong><%=t(".label_at")%></strong>
   <%= @admin_cron_request.at %>
 </p>
 
 <p>
-  <strong>Status:</strong>
+  <strong><%=t(".label_status")%></strong>
   <%= @admin_cron_request.status %>
 </p>
 
@@ -41,9 +51,16 @@
 </p>
 
 <p>
-  <strong>Params:</strong>
+  <strong><%=t(".label_params")%></strong>
   <%= @admin_cron_request.params %>
 </p>
 
-<%= link_to 'Edit', edit_admin_cron_request_path(@admin_cron_request) %> |
-<%= link_to 'Back', admin_cron_requests_path %>
+<%= link_to t("button.edit"), edit_admin_cron_request_path(@admin_cron_request) %> |
+<%= link_to t("button.back"), admin_cron_requests_path %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
