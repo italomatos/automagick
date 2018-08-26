@@ -34,6 +34,7 @@ en:
     edit: "Edit"
     show: "Show"
     destroy: "Destroy"
+    back: "Back"
   message:
     confirmation_message: "Are you sure?"
   admin:
@@ -51,6 +52,8 @@ en:
         table_label_run_manually_action: "Run Manually"
 
         new_button: "New schedule request"
+      new:
+        title_page: "New schedule request"
       form:
         label_title: "Title"
         label_description: "Description" 

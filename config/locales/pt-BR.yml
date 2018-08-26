@@ -34,6 +34,7 @@ pt-BR:
     edit: "Editar"
     show: "Exibir"
     destroy: "Remover"
+    back: "Voltar"
   message:
     confirmation_message: "Tem certeza que deseja executar essa ação?"
   admin:
@@ -50,6 +51,8 @@ pt-BR:
         table_label_run_manually_action: "Executar manualmente (agora)"
 
         new_button: "Novo agendamento de requisição"
+      new:
+        title_page: "Novo agendamento de requisição"
       form:
         label_title: "Título"
         label_description: "Descrição" 
