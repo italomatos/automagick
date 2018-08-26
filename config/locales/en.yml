@@ -39,6 +39,7 @@ en:
   message:
     confirmation_message: "Are you sure?"
     prohibited_saved: "prohibited this admin_cron_request from being saved:"
+    no_records: "No records yet"
   admin:
     cron_requests:
       index:
@@ -68,6 +69,11 @@ en:
         label_at: "Hour:"
         label_status: "Status:"
         label_params: "Parameters:"
+      logs:
+        title_page: "Logs"
+        table_header_datetime: "Date"
+        table_header_http_status_code: "Http Status Code"
+        table_header_response: "Response"
       form:
         label_title: "Title"
         label_description: "Description" 

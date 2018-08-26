@@ -1,28 +1,35 @@
-<br/>
 
-<section class="panel">
-  <header class="panel-heading">
-    Log
-  </header>
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+      <div class="x_title">
+          <h2><%= t(".title_page") %></h2>
+          <div class="clearfix"></div>
+      </div>
 
+      <div class="x_content">
+        <% if @admin_cron_request_logs.count > 0 %>
+        <table class="table table-striped">
+           <thead>
+          <tr>
+            <th><%=t(".table_header_datetime")%></th>
+            <th><%=t(".table_header_http_status_code")%></th>
+            <th><%=t(".table_header_response")%></th>
+          </tr>
+          </thead>
 
-<table class="table b-t text-small">
-   <thead>
-  <tr>
-    <th>Data</th>
-    <th>Http Status Code</th>
-    <th>Response</th>
-  </tr>
-  </thead>
-
-<% @admin_cron_request_logs.each do |admin_cron_request_log| %>
-  <tr>
-    <td><%= admin_cron_request_log.created_at %></td>
-    <td><%= admin_cron_request_log.status_code %></td>
-    <td><pre><%= admin_cron_request_log.response %></pre></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-</section>
+        <% @admin_cron_request_logs.each do |admin_cron_request_log| %>
+          <tr>
+            <td><%= admin_cron_request_log.created_at %></td>
+            <td><%= admin_cron_request_log.status_code %></td>
+            <td><pre><%= admin_cron_request_log.response %></pre></td>
+          </tr>
+        <% end %>
+        </table>
+        <% else %>
+          <center><%=t("message.no_records")%></center>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

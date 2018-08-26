@@ -39,6 +39,7 @@ pt-BR:
   message:
     confirmation_message: "Tem certeza que deseja executar essa ação?"
     prohibited_saved: "proibiu(ram) com que seja salva a(s) alteração(ões)"
+    no_records: "Nenhum registro"
   admin:
     cron_requests:
       index:
@@ -67,6 +68,11 @@ pt-BR:
         label_at: "Horário"
         label_status: "Status"
         label_params: "Parâmetros"
+      logs:
+        title_page: "Logs"
+        table_header_datetime: "Data e Hora"
+        table_header_http_status_code: "Código de Status HTTP"
+        table_header_response: "Resposta"
       form:
         label_title: "Título"
         label_description: "Descrição" 
