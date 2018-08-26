@@ -28,7 +28,7 @@ class Admin::CronRequestsController < ApplicationController
 
     respond_to do |format|
       if @admin_cron_request.save
-        format.html { redirect_to @admin_cron_request, notice: 'Cron request was successfully created.' }
+        format.html { redirect_to @admin_cron_request, notice:  I18n.t('admin.cron_requests.create.message.success') }
         format.json { render :show, status: :created, location: @admin_cron_request }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class Admin::CronRequestsController < ApplicationController
   def update
     respond_to do |format|
       if @admin_cron_request.update(admin_cron_request_params)
-        format.html { redirect_to @admin_cron_request, notice: 'Cron request was successfully updated.' }
+        format.html { redirect_to @admin_cron_request, notice:  I18n.t('admin.cron_requests.update.message.success')  }
         format.json { render :show, status: :ok, location: @admin_cron_request }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class Admin::CronRequestsController < ApplicationController
   def destroy
     @admin_cron_request.destroy
     respond_to do |format|
-      format.html { redirect_to admin_cron_requests_url, notice: 'Cron request was successfully destroyed.' }
+      format.html { redirect_to admin_cron_requests_url, notice:   I18n.t('admin.cron_requests.destroy.message.success')  }
       format.json { head :no_content }
     end
   end
@@ -69,7 +69,7 @@ class Admin::CronRequestsController < ApplicationController
     @admin_cron_request = Admin::CronRequest.find(params[:cron_request_id])
     @admin_cron_request.run!
     respond_to do |format|
-      format.html { redirect_to admin_cron_requests_url, notice: 'Success!' }
+      format.html { redirect_to admin_cron_requests_url, notice:   I18n.t('admin.cron_requests.run_now.message.success')  }
     end
   end
 

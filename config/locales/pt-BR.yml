@@ -73,6 +73,18 @@ pt-BR:
         table_header_datetime: "Data e Hora"
         table_header_http_status_code: "Código de Status HTTP"
         table_header_response: "Resposta"
+      update:
+        message:
+          success: "Agendamento de requisição atualizada com sucesso."
+      create:
+        message:
+          success: "Agendamento de requisição cadastrada com sucesso."
+      destroy:
+        message:
+          success: "Agendamento de requisição removida com sucesso."
+      run_now:
+        message:
+          success: "Agendamento de requisição rodou com sucesso."
       form:
         label_title: "Título"
         label_description: "Descrição" 

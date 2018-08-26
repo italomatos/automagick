@@ -74,6 +74,18 @@ en:
         table_header_datetime: "Date"
         table_header_http_status_code: "Http Status Code"
         table_header_response: "Response"
+      update:
+        message:
+          success: "Cron request was successfully updated."
+      create:
+        message:
+          success: "Cron request was successfully created."
+      destroy:
+        message:
+          success: "Cron request was successfully destroyed."
+      run_now:
+        message:
+          success: "Cron request was successfully ran."
       form:
         label_title: "Title"
         label_description: "Description" 
