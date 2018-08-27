@@ -287,4 +287,9 @@ Devise.setup do |config|
   # ActiveSupport.on_load(:devise_failure_app) do
   #   include Turbolinks::Controller
   # end
+  # append to end of config/initializers/devise.rb
+  Rails.application.config.to_prepare do
+    Devise::RegistrationsController.layout proc { |controller| user_signed_in? ? "application" : "devise" }
+    # And/or Sessions, Confirmations, Unlocks, Passwords
+  end
 end

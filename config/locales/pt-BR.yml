@@ -40,6 +40,8 @@ pt-BR:
     confirmation_message: "Tem certeza que deseja executar essa ação?"
     prohibited_saved: "proibiu(ram) com que seja salva a(s) alteração(ões)"
     no_records: "Nenhum registro"
+  link:
+    logout: "Sair"
   admin:
     cron_requests:
       index:

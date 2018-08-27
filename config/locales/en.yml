@@ -40,6 +40,8 @@ en:
     confirmation_message: "Are you sure?"
     prohibited_saved: "prohibited this admin_cron_request from being saved:"
     no_records: "No records yet"
+  link:
+    logout: "Log Out"
   admin:
     cron_requests:
       index:

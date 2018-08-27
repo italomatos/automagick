@@ -1,6 +1,8 @@
 class Admin::CronRequestsController < ApplicationController
   before_action :set_admin_cron_request, only: [:show, :edit, :update, :destroy]
 
+  before_action :authenticate_user!
+
   # GET /admin/cron_requests
   # GET /admin/cron_requests.json
   def index
