@@ -43,6 +43,11 @@ pt-BR:
   link:
     logout: "Sair"
     profile: "Perfil"
+  menu:
+    welcome: "Bem-Vindo, "
+    general: "Geral"
+    home: "Home"
+    cron_requests: "Agendamento de requisições"
   admin:
     cron_requests:
       index:

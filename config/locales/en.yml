@@ -43,6 +43,11 @@ en:
   link:
     logout: "Log Out"
     profile: "Profile"
+  menu:
+    welcome: "Welcome, "
+    general: "General"
+    home: "Home"
+    cron_requests: "Cron Requests"
   admin:
     cron_requests:
       index:
