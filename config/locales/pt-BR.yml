@@ -42,6 +42,7 @@ pt-BR:
     no_records: "Nenhum registro"
   link:
     logout: "Sair"
+    profile: "Perfil"
   admin:
     cron_requests:
       index:

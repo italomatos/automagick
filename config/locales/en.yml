@@ -42,6 +42,7 @@ en:
     no_records: "No records yet"
   link:
     logout: "Log Out"
+    profile: "Profile"
   admin:
     cron_requests:
       index:
