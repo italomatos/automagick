@@ -1,0 +1,12 @@
+{
+  "name": "Automagick Sandbox",
+  "description":"Demo Automagick",
+  "repository": "https://github.com/italomatos/automagick",
+  "logo": "http://guides.spreecommerce.org/images/logo.png",
+  "keywords": [
+    "spree"
+  ],
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate && bundle exec rake db:seed"
+  }
+}
