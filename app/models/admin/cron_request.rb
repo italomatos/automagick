@@ -57,7 +57,7 @@ class Admin::CronRequest < ApplicationRecord
 	def update_whenever_file
 	  	File.open('./config/schedule.rb', 'w+') do |f|
 	  		f.puts "set :output, './log/automagick.cron.log'"
-	  		Admin::CronRequest.where("status = 1").each do |cron_request|
+	  		Admin::CronRequest.where(status: 1).each do |cron_request|
 	  			f.puts cron_request.parse_to_whenever
 	  		end
 	  	end
