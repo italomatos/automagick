@@ -35,12 +35,28 @@
 
   <div class="form-group">
     <%= form.label :periodicity, t(".label_periodicity"), :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
-    <div class="col-md-6 col-sm-6 col-xs-12"><%= form.text_field :periodicity, :class=>"form-control col-md-7 col-xs-12" %></div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <%= form.select(:periodicity, options_for_select([['1', '1'], ['5', '5'], ['10', '10'], ['15', '15'], ['20', '20']], @admin_cron_request.periodicity), {},{:class=>"form-control col-md-7 col-xs-12"}) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :periodicity_type, t(".label_periodicity_type"), :class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <%= form.select(:periodicity_type, options_for_select([['Minuto(s)', 'minutes'], ['Hora(s)', 'hours'], ['Dia(s)', 'days'], ['Mes(es)', 'months']], @admin_cron_request.periodicity_type), {},{:class=>"form-control col-md-7 col-xs-12"}) %>
+    </div>
   </div>
 
   <div class="form-group">
     <%= form.label :at, t(".label_at"),:class=>"control-label col-md-3 col-sm-3 col-xs-12" %>
-    <div class="col-md-6 col-sm-6 col-xs-12"><%= form.text_field :at, :class=>"form-control col-md-7 col-xs-12" %></div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+         <%options = Array.new %>
+    <% options << ['', ''] %>
+    <% 12.times{|t| options << ["#{t + 1}:00 am", "#{t + 1}:00 am"]; options << ["#{t + 1}:30 am", "#{t + 1}:30 am"]} %>
+    <% 12.times{|t| options << ["#{t + 1}:00 pm", "#{t + 1}:00 pm"]; options << ["#{t + 1}:30 pm", "#{t + 1}:30 pm"]} %>
+    <%= form.select(:at, options_for_select(options, @admin_cron_request.at), {},{:class=>"form-control col-md-7 col-xs-12"}) %>
+
+    </div>
   </div>
 
   <div class="form-group">
