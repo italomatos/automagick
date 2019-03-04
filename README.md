@@ -37,7 +37,7 @@ Automagick is designed to run in the cloud or on dedicated hardware, whatever yo
 	$> cp config/schedule.rb.sample config/schedule.rb
 	$> bundle install --without production
 	$> bundle exec rake db:setup
-	$> rails s -p 3000
+	$> rails s -p 3000 *if you use Vagrant and have some problem to access http://localhost:3000, try start rails server: rails s -p3000 -b 0.0.0.0
 ```
 
 ### Demo
