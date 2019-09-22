@@ -2,7 +2,8 @@ FROM ruby:2.5.1
 ENV LANG C.UTF-8
 
 RUN apt-get update && \
-    apt-get install -y nodejs \
+    apt-get install -y cron \
+    				   nodejs \
                        vim \
                        mysql-client \
                        --no-install-recommends && \
