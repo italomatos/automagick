@@ -7,7 +7,7 @@ class Admin::CronRequest < ApplicationRecord
 	after_save :update_whenever_file
 
 	validates :title, presence: true
-	validates :url, presence: true
+	validates :url, presence: true, url_check: true
 	validates :http_method, presence: true
 
 	def run!
