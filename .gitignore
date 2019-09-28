@@ -24,6 +24,9 @@ config/master.key
 # TODO Comment out this rule if environment variables can be committed
 .env
 
+Capfile
+config/deploy.rb
+config/deploy/**
 ## Environment normalization:
 /.bundle
 /vendor/bundle
