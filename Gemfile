@@ -5,6 +5,7 @@ ruby '2.5.1'
 gem 'gentelella-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
+gem 'mysql2'
 # Use sqlite3 as the database for Active Record
 
 # Use Puma as the app server
@@ -58,7 +59,7 @@ group :development do
 end
 
 group :production do 
-  gem 'pg'
+  gem 'mysql2'
 end
 
 group :test do
