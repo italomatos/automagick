@@ -7,7 +7,7 @@ capybara-*.html
 /db/*.sqlite3-journal
 /public/system
 /coverage/
-config/schedule.rb
+#config/schedule.rb
 /spec/tmp
 *.orig
 rerun.txt
